@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "depgraph-py"
+version = "0.1.0"
+description = "Interactive dependency graph & blast-radius analyzer for Python projects"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "AEKKALADEVI VIKAS", email = "a.vikas2003@gmail.com" }]
+keywords = ["dependency", "graph", "static-analysis", "refactoring", "imports", "circular"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "networkx>=3.0",
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+depgraph = "depgraph.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/depgraph"
+Issues = "https://github.com/yourusername/depgraph/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["depgraph"]
