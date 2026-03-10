@@ -352,7 +352,7 @@ The visualizer uses **D3.js 7** via CDN — no extra Python dependencies needed.
 ## Development
 
 ```bash
-git clone https://github.com/yourusername/depgraph
+git clone https://github.com/Aekkaladevi-Vikas/DepGraph.git
 cd depgraph
 pip install -e .
 pytest tests/ -v
