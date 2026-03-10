@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "depgraph-py"
-version = "0.1.0"
+version = "0.1.1"
 description = "Interactive dependency graph & blast-radius analyzer for Python projects"
 readme = "README.md"
 license = { file = "LICENSE" }
